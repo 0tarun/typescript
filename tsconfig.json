@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
         "target": "esnext",
-        "outDir": "assets/js",
-        "rootDir": "assets/ts",
-        "noEmitOnError": true
+        // "lib": ["ES2015"],
+        // "outDir": "assets/js",
+        // "rootDir": "assets/ts",
+        "noEmitOnError": true,
+        "moduleDetection": "force"
     }
 }
