@@ -1,6 +1,6 @@
-let name;
-name = "Tarun Chandra Das";
+let fullName;
+fullName = "Tarun Chandra Das";
 let newName;
-newName = name.replace("Tarun Chandra Das", "Rudra Kumar Das");
+newName = fullName.replace("Tarun Chandra Das", "Rudra Kumar Das");
 console.log(newName);
 export {};

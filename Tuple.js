@@ -14,4 +14,6 @@ const items = [
 ];
 items.push(["Orange", 40]);
 items.push(["Grapes", 50]);
+items.push(["pineapple", 60]);
+console.log(items);
 export {};
