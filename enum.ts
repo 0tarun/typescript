@@ -35,3 +35,15 @@ const article3: Article = {
 console.log(article1);
 console.log(article2);
 console.log(article3);
+
+
+// literal type example
+
+// type Method = "GET" | "POST" | "PUT" | "DELETE";
+
+// const method: Method = "UPDATE"; // Error: Type '"UPDATE"' is not assignable to type 'Method'.
+// const method: Method = "DELETE"
+
+// type status = "draft" | "private" | "public";
+// type color = "red" | "green" | "blue";
+// const Status: status = "draft";
