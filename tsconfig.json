@@ -1,5 +1,8 @@
 {
     "compilerOptions": {
-        "target": "esnext"
+        "target": "esnext",
+        "outDir": "assets/js",
+        "rootDir": "assets/ts",
+        "noEmitOnError": true
     }
 }
