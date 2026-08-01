@@ -46,3 +46,17 @@ activeSessions.set(102, UserRole.Developer);
 Task: Write the TypeScript code to check if userId 102 exists
  in the activeSessions map.
  If it exists, retrieve its value and print it to the console.
+
+
+
+ Q3 Write an interface for a backend API response:
+
+ {
+    "success": true,
+    "message": "User created successfully",
+    "data": {
+        "id": 1,
+        "name": "Tarun",
+        "email": "tarun@gmail.com"
+    }
+}
