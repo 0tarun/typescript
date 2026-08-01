@@ -28,11 +28,21 @@ variables or properties in your code.
 
 
 
-Question 2: Tuples vs Arrays (Tuple.ts, array.ts)
+Question 2: Maps and Enums 
 _____________________________________________________
-const locationCoordinate: [number, number] = [23.8103, 90.4125]; 
-const productPrices: number[] =;
+enum UserRole {
+  Admin = "ADMIN",
+  Developer = "DEVELOPER",
+  Guest = "GUEST"
+}
 
-Task: Explain the strict difference between a Tuple ([number, number]) and 
-a standard Array (number[]) regarding their length and fixed data types.
- What is the main advantage of using a Tuple when sending or passing structural values?
+// Key is the userId (number), Value is the UserRole
+const activeSessions = new Map<number, UserRole>();
+
+activeSessions.set(101, UserRole.Admin);
+activeSessions.set(102, UserRole.Developer);
+
+
+Task: Write the TypeScript code to check if userId 102 exists
+ in the activeSessions map.
+ If it exists, retrieve its value and print it to the console.
