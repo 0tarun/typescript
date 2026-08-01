@@ -1,0 +1,38 @@
+Question 1: Generics & Utility Types (Omit, generic.ts)
+__________________________________________________________
+---Complete the generic function definition below so that
+ it accepts an object without an id and returns the full 
+ object with an id.
+
+ interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+// 1. Define UserInput type using the Omit utility type to remove 'id'
+type UserInput = // Write your code here
+
+// 2. Complete the generic function signature
+function createRecord<T>(input: UserInput): User {
+  return {
+    id: Math.floor(Math.random() * 1000),
+    ...input
+  };
+}
+
+Task: Write the code for UserInput using Omit, and explain 
+how a utility type like Omit helps you prevent unwanted 
+variables or properties in your code.
+
+
+
+
+Question 2: Tuples vs Arrays (Tuple.ts, array.ts)
+_____________________________________________________
+const locationCoordinate: [number, number] = [23.8103, 90.4125]; 
+const productPrices: number[] =;
+
+Task: Explain the strict difference between a Tuple ([number, number]) and 
+a standard Array (number[]) regarding their length and fixed data types.
+ What is the main advantage of using a Tuple when sending or passing structural values?
